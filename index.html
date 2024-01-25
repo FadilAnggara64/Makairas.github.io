@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makaira's Coffe</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).on('scroll', function(){
+    if ( $(window).scrollTop() > 30) {
+        $('#container-header').addClass('change-color');
+    } else {
+        $('#container-header').removeClass('change-color');
+    }
+    });
+    jQuery(window).on('scroll', function() {
+    if(jQuery(window).scrollTop() > 30) {
+        jQuery('#container-header').css('color', 'black');
+        jQuery('#container-header').css('box-shadow', '1px 0 8px grey');
+    } else {
+       jQuery('#container-header').css('color', 'white');
+    } 
+})
+    jQuery(window).on('scroll', function() {
+        if(jQuery(window).scrollTop() > 30) {
+            jQuery('#menu-bar').css('color', 'black');
+        } else {
+        jQuery('#menu-bar').css('color', 'white');
+        } 
+    })
+    $(document).on('scroll', function(){
+    if ( $(window).scrollTop() > 30) {
+        $('#menu-bar').addClass('hover');
+    } else {
+        $('#menu-bar').removeClass('hover');
+    }
+    });
+    jQuery(window).on('scroll', function() {
+        if(jQuery(window).scrollTop() > 30) {
+            jQuery('#b').css('color', '#F0A500');
+        } else {
+        jQuery('#b').css('color', 'white');
+        } 
+    })
+    jQuery(window).on('scroll', function() {
+        if(jQuery(window).scrollTop() > 30) {
+            jQuery('.c').css('color', 'black');
+        } else {
+        jQuery('.c').css('color', 'white');
+        } 
+    })
+    </script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="container-header">
+           <h1>MAKAIRA<span id="b">COFFE</span></h1>
+           <div id="menu-bar">
+                <a><a href="#home" class="c">Home</a></a>
+                <a><a href="#tentang" class="c">Tentang Kami</a></a>
+                <a><a href="#menu" class="c">Menu</a></a>
+                <a><a href="#kontak" class="c">Kontak</a></a>
+           </div>
+           <div class="icon">
+            <i class="a" data-feather="shopping-cart"></i>
+        <script>
+        feather.replace();
+        </script>
+           <i data-feather="search"></i>
+        <script>
+        feather.replace();
+        </script>
+           </div>
+        </div>
+     </header>
+     
+     <div class="container-main" id="home">
+        
+     </div>
+     <div class="container-main2" id="tentang">
+        <h2>Tentang Kami</h2>
+     </div>
+     <div class="container-main2" id="menu">
+        <h2>Menu</h2>
+     </div>
+     <div class="container-main2" id="kontak">
+        <h2>Kontak</h2>
+     </div>
+</body>
+</html>
